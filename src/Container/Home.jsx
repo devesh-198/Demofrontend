@@ -96,6 +96,16 @@ function Home(props) {
 
     return (
         <div className={classes.Home}>
+            {
+                controls.loading && !controls.response ? (
+                    <div style={{display: "flex", justifyContent: "center", marginTop: "3rem"}}>
+                        <div style={{textAlign: "center"}}>
+                            <i class="fa fa-circle-o-notch fa-spin" style={{fontSize: "2rem"}}></i>
+                            <div>Loading...First load might be slow as this is just a demo project.</div>
+                        </div>
+                    </div>
+                ) : null
+            }
             <div className={classes.chartContainer}>
                 {
                     controls.response?.scatteredChart ? (
