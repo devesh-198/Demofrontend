@@ -1,0 +1,112 @@
+.tableRow {
+    border-bottom: 1px solid #eceeef;
+}
+
+.tableHead {
+    padding: 1rem;
+    border-bottom: 1px solid #eceeef;
+    cursor: pointer;
+}
+
+.headBlock {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headerValue {
+    font-weight: 400;
+    padding-right: .5rem;
+}
+
+.tableValues {
+    padding: 1rem;
+    border-bottom: 1px solid #eceeef;
+}
+
+.paginnationBlock {
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.paginationButtton {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #006aff;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 7rem;
+    letter-spacing: .5px;
+}
+
+.paginationButtton:disabled {
+    cursor: not-allowed;
+    background-color: rgba(0, 106, 255, .7);
+}
+
+.pageSizeBlock {
+    border-radius: .5rem;
+    border: 1px solid hsl(0, 0%, 80%);
+    height: 40px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    /* margin-right: 1rem; */
+}
+
+.pageSizeDropdown {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #7f8899;
+    padding: .2rem .5rem;
+}
+
+.pageDetail {
+    color: #7f8899;
+    text-align: right;
+    margin: .5rem 1rem;
+}
+
+.tableTopControls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.searchSong {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    width: min(100%, 25rem);
+    padding: 0 .7rem;
+    color: #202020;
+}
+
+.csvButton {
+    border-radius: 5px;
+    border: solid 1px #006aff;
+    background-color: #fff;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #006aff;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.6;
+}

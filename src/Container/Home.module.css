@@ -1,0 +1,10 @@
+.Home {
+    /* padding: 1rem; */
+}
+
+.chartContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
