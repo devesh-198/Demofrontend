@@ -46,7 +46,6 @@ function Home(props) {
         })
             // Handle the response from backend here
             .then((res) => {
-                console.log("res.data", res.data);
                 const data = res.data;
 
                 if (data?.head?.status !== 200) {
@@ -61,10 +60,8 @@ function Home(props) {
             // Catch errors if any
             .catch((err) => {
                 setControls(prevControls => ({...prevControls, "error": "Something went wrong.", "loading": false}));
-                console.log(err);
             });
 
-        console.log(baseUrl);
     }
 
     const setRating = (rating, songId) => {
@@ -88,7 +85,6 @@ function Home(props) {
     }
 
     const searchSongCallBack = (searchTerm) => {
-        console.log(searchTerm);
         const apiData = controls.response;
 
         loadApiData(apiData?.sortBy, apiData?.sortOrder, 0, apiData?.perPageCount, searchTerm);
@@ -97,8 +93,6 @@ function Home(props) {
     useEffect(() => {
         loadApiData();
     }, []);
-
-    console.log("controls------------", controls);
 
     return (
         <div className={classes.Home}>
